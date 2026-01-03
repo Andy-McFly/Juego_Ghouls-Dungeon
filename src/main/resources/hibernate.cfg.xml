@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE hibernate-configuration PUBLIC
+ "-//Hibernate/Hibernate Configuration DTD 3.0//EN"        
+ "https://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> 
+ <hibernate-configuration>  
+ <session-factory>   
+ <!-- Database config -->  
+ <property name="hibernate.hbm2ddl.auto">update</property> 
+ <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dungeon</property>  
+ <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>   
+ <property name="hibernate.connection.username">root</property>  
+ <property name="hibernate.connection.password">Studium2024;</property>  
+ <property name="show_sql">true</property>  
+ <!-- Mapping files -->  
+ <mapping class="es.studium.Armadura" />  
+ <mapping class="es.studium.Arma" />
+ <mapping class="es.studium.HistorialPartidas" />
+ <mapping class="es.studium.Enemigo" />
+ <mapping class="es.studium.Jugador" />
+ </session-factory> 
+ </hibernate-configuration>
