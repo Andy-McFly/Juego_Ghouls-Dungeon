@@ -1,10 +1,10 @@
-# 👻 Ghouls N' Dungeon
+# Ghouls N' Dungeon
 
 > RPG de combates por turnos con estética pixel art, sistema de progresión y persistencia completa en MySQL. Desarrollado en Java con Swing y Maven.
 
 ---
 
-## 🎮 Sobre el juego
+## Sobre el juego
 
 Ghouls N' Dungeon es un RPG de acción por turnos en el que el jugador crea un héroe y lo lleva a través de una mazmorra dividida en **cuatro fases** con escenarios y enemigos distintos. El objetivo es sobrevivir hasta derrotar al jefe final: el Rey Maldito.
 
@@ -16,7 +16,7 @@ Si el héroe muere, su nivel y su oro se guardarán para el siguiente intento. S
 
 ---
 
-## 🖥️ Algunas capturas de pantalla
+## Algunas capturas de pantalla
 
 | Menú Principal | Diario de Aventuras |
 |---|---|
@@ -36,7 +36,7 @@ Si el héroe muere, su nivel y su oro se guardarán para el siguiente intento. S
 
 ---
 
-## ⚔️ Sistema de combate
+## Sistema de combate
 
 El combate es por turnos y enfrenta al héroe contra **varios enemigos simultáneamente** por fase. La lógica sigue este flujo:
 
@@ -57,7 +57,7 @@ Cada acción queda reflejada en tiempo real en el **log de combate**, que regist
 
 ---
 
-## 📈 Progresión del héroe
+## Progresión del héroe
 
 El héroe sube de nivel al superar cada fase. Con cada nivel, sus estadísticas base mejoran automáticamente:
 
@@ -72,7 +72,7 @@ Además del nivel base, el equipo comprado en la tienda (armas y armaduras) aña
 
 ---
 
-## 🗺️ Fases del juego
+## Fases del juego
 
 El juego está estructurado en cuatro fases con escenarios únicos y enemigos propios:
 
@@ -85,7 +85,7 @@ El juego está estructurado en cuatro fases con escenarios únicos y enemigos pr
 
 ---
 
-## 🛒 Tienda
+## Tienda
 
 Entre ciertas fases, el jugador accede a la tienda donde puede comprar:
 - **Armas**: aumentan el ataque base del héroe
@@ -96,7 +96,7 @@ La decisión de gastar oro en equipo o guardarlo implica una gestión estratégi
 
 ---
 
-## 💾 Persistencia de datos con MySQL
+## Persistencia de datos con MySQL
 
 Al terminar cada partida (victoria o derrota), el juego guarda automáticamente un registro en la base de datos con:
 - **Fecha** de la partida
@@ -109,7 +109,7 @@ El **Diario de Aventuras** recupera todos estos registros y los presenta ordenad
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 | Tecnología | Uso |
 |-----------|-----|
@@ -122,7 +122,7 @@ El **Diario de Aventuras** recupera todos estos registros y los presenta ordenad
 
 ---
 
-## ⚙️ Conceptos técnicos aplicados
+## Conceptos técnicos aplicados
 
 - **Patrón DAO** para separar la lógica de acceso a datos del resto de la aplicación
 - **POO avanzada**: herencia y polimorfismo en la jerarquía `Personaje → Héroe / Enemigo`
